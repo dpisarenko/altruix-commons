@@ -14,6 +14,13 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
+  <distributionManagement>
+	<repository>
+	  <id>altruix-repository</id>
+	  <url>ftp://silverstrike.at/altruix-repository/</url>
+	</repository>
+  </distributionManagement>
+
   <build>
 	<plugins>
 		<plugin>
