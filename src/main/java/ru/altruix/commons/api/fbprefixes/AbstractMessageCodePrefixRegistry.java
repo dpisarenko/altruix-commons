@@ -28,7 +28,7 @@ public abstract class AbstractMessageCodePrefixRegistry<C extends Enum<C>> {
         return PREFIX_MESSAGE_NUMBER_SEPARATOR;
     }
 
-    public String getPrefix(final C aModule) {
+    public final String getPrefix(final C aModule) {
         return this.prefixesByModules.get(aModule)
                 + PREFIX_MESSAGE_NUMBER_SEPARATOR;
     }
