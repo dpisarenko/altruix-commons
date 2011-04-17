@@ -22,7 +22,7 @@ public class DefaultTranslationTesterFactory implements
         TranslationTesterFactory {
 
     @Override
-    public TranslationTester create() {
+    public final TranslationTester create() {
         return new DefaultTranslationTester();
     }
 }
