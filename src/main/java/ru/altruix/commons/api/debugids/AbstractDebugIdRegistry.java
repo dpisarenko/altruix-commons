@@ -27,11 +27,13 @@ import ru.altruix.commons.api.fbprefixes.AbstractMessageCodePrefixRegistry;
  * @author DP118M
  * 
  */
-public abstract class AbstractDebugIdRegistry<F extends Enum<F>, C extends DebugIdKey<F>, R extends AbstractMessageCodePrefixRegistry<F>> {
+public abstract class AbstractDebugIdRegistry
+    <F extends Enum<F>, C extends DebugIdKey<F>, 
+    R extends AbstractMessageCodePrefixRegistry<F>> {
     private static final String DEBUGIDS_FILE = "debugids/debugids.properties";
     private static final Logger LOGGER = LoggerFactory
             .getLogger(AbstractDebugIdRegistry.class);
-    protected DebugIdKeyFactory<F, C> debugIdKeyFactory;
+    private DebugIdKeyFactory<F, C> debugIdKeyFactory;
     private Set<String> alreadyFetchedKeys = new HashSet<String>();
     private Properties properties = new Properties();
     private List<C> debugKeys = new ArrayList<C>();
@@ -66,7 +68,7 @@ public abstract class AbstractDebugIdRegistry<F extends Enum<F>, C extends Debug
         }
     }
 
-    public String getDebugId(final F aModule, final String aKey) {
+    public final String getDebugId(final F aModule, final String aKey) {
         final C debugIdKey = debugIdKeyFactory.create();
         debugIdKey.setModule(aModule);
         debugIdKey.setKey(aKey);
@@ -74,14 +76,15 @@ public abstract class AbstractDebugIdRegistry<F extends Enum<F>, C extends Debug
         return this.getDebugId(debugIdKey);
     }
 
-    public void setDebugIdsFile(final String aFileName) {
+    public final void setDebugIdsFile(final String aFileName) {
         loadData(aFileName);
     }
 
-    public String getDebugId(final C aDebugIdKey) {
+    public final String getDebugId(final C aDebugIdKey) {
         final String aModuleWithKey =
                 aDebugIdKey.getModule().toString()
-                        + AbstractMessageCodePrefixRegistry.getMessageNumberSeparator()
+                        + AbstractMessageCodePrefixRegistry
+                                .getMessageNumberSeparator()
                         + aDebugIdKey.getKey();
 
         if (!this.debugKeys.contains(aDebugIdKey)) {
