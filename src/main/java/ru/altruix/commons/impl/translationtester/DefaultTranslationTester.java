@@ -18,6 +18,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Properties;
 
+import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -39,7 +40,7 @@ class DefaultTranslationTester implements TranslationTester {
     private List<File> translationDirectories;
 
     private List<ProblemTuple> translationProblems;
-    
+
     @Override
     public void run() throws PccException {
         final List<KeyAndLanguageTuple> klt =
@@ -51,7 +52,6 @@ class DefaultTranslationTester implements TranslationTester {
         }
 
     }
-
 
     @Override
     public List<ProblemTuple> getTranslationProblems() {
@@ -169,16 +169,19 @@ class DefaultTranslationTester implements TranslationTester {
 
     private Properties file2properties(final File aFile) {
         final Properties properties = new Properties();
+        FileInputStream fileInputStream = null;
         try {
-            properties.load(new FileInputStream(aFile));
+            fileInputStream = new FileInputStream(aFile);
+            properties.load(fileInputStream);
         } catch (final IOException exception) {
             LOGGER.error("", exception);
             Assert.fail(exception.getMessage());
+        } finally {
+            IOUtils.closeQuietly(fileInputStream);
         }
         return properties;
     }
 
-    
     @Override
     public void setTranslationDirectories(final List<File> aDirectories) {
         this.translationDirectories = aDirectories;
