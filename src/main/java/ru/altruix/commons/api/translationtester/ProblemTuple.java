@@ -19,8 +19,8 @@ import java.util.List;
  */
 public interface ProblemTuple {
 
-    public abstract List<String> getProblematicKeys();
+    List<String> getProblematicKeys();
 
-    public abstract String getCulture();
+    String getCulture();
 
 }
