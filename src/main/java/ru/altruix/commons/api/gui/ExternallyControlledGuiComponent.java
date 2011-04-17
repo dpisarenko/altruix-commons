@@ -17,6 +17,7 @@ import com.vaadin.ui.AbstractComponent;
  * @author DP118M
  * 
  */
-public interface ExternallyControlledGuiComponent<C extends GuiController<K>, K extends AbstractComponent> {
+public interface ExternallyControlledGuiComponent
+    <C extends GuiController<K>, K extends AbstractComponent> {
     void setGuiController(final C aController);
 }
