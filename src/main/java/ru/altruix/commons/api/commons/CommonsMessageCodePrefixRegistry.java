@@ -31,7 +31,7 @@ public class CommonsMessageCodePrefixRegistry extends
     }
 
     @Override
-    protected
+    protected final
             void
             fillPrefixesByModules(
                     final Map<CommonsFunctionalBlock, String> aPrefixesByFunctionalBlocks) {

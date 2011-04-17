@@ -23,25 +23,25 @@ public abstract class AbstractDebugIdKey<C extends Enum<C>> {
     private C module;
     private String key;
 
-    public void setModule(final C aModule) {
+    public final void setModule(final C aModule) {
         this.module = aModule;
     }
 
-    public C getModule() {
+    public final C getModule() {
         return this.module;
     }
 
-    public void setKey(final String aKey) {
+    public final void setKey(final String aKey) {
         this.key = aKey;
     }
 
-    public String getKey() {
+    public final String getKey() {
         return this.key;
     }
 
     @SuppressWarnings("rawtypes")
     @Override
-    public boolean equals(final Object aObject) {
+    public final boolean equals(final Object aObject) {
         if (aObject == null) {
             return false;
         }
@@ -58,7 +58,7 @@ public abstract class AbstractDebugIdKey<C extends Enum<C>> {
     }
 
     @Override
-    public int hashCode() {
+    public final int hashCode() {
         return new HashCodeBuilder(1, HASH_CODE_MULTIPLIER).append(module)
                 .append(key)
                 .toHashCode();
