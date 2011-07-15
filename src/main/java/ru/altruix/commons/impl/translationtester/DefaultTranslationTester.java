@@ -144,9 +144,6 @@ class DefaultTranslationTester implements TranslationTester {
                     if (!StringUtils.isBlank(StringUtils
                             .trimToEmpty(translatedValue))) {
                         tuple.getNonBlankKeys().add(curKey);
-                        LOGGER.debug("Added key '{}', culture: {}, file: {}",
-                                new Object[] { curKey, tuple.getCulture(),
-                                        curFile });
                     }
                 }
             }
@@ -186,5 +183,4 @@ class DefaultTranslationTester implements TranslationTester {
     public void setTranslationDirectories(final List<File> aDirectories) {
         this.translationDirectories = aDirectories;
     }
-
 }
