@@ -14,16 +14,10 @@ package ru.altruix.commons.api.conventions;
 import ru.altruix.commons.api.di.PccException;
 
 /**
- * Instances of this class represent modules, which have exactly one specific
- * purpose and are used in the following way:
- * 
- * 1) First, input data are provided.
- * 2) Then, the central work process of this module is executed (by calling method run).
- * 3) Results are given to the calling routine.
- * 
- * @author Dmitri Pisarenko
- *
+ * @deprecated
+ * Please use ru.altruix.commons.api.conventions.SingleActivityFunctionalBlock instead.
  */
+@Deprecated
 public interface SingleActivityModule {
 	void run() throws PccException;
 }
