@@ -7,6 +7,8 @@
 
 package ru.altruix.commons.api.conventions;
 
+import ru.altruix.commons.api.di.PccException;
+
 /**
  * Instances of this class represent functional blocks, which have exactly one specific
  * purpose and are used in the following way:
@@ -19,5 +21,5 @@ package ru.altruix.commons.api.conventions;
  *
  */
 public interface SingleActivityFunctionalBlock {
-
+    void run() throws PccException;
 }

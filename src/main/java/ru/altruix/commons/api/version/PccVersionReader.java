@@ -11,8 +11,8 @@
 
 package ru.altruix.commons.api.version;
 
-import ru.altruix.commons.api.conventions.SingleActivityModule;
+import ru.altruix.commons.api.conventions.SingleActivityFunctionalBlock;
 
-public interface PccVersionReader extends SingleActivityModule {
+public interface PccVersionReader extends SingleActivityFunctionalBlock {
     String getVersion();
 }

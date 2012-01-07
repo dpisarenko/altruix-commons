@@ -19,5 +19,5 @@ import ru.altruix.commons.api.di.PccException;
  */
 @Deprecated
 public interface SingleActivityModule {
-	void run() throws PccException;
+    void run() throws PccException;
 }

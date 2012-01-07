@@ -14,13 +14,14 @@ package ru.altruix.commons.api.translationtester;
 import java.io.File;
 import java.util.List;
 
-import ru.altruix.commons.api.conventions.SingleActivityModule;
+import ru.altruix.commons.api.conventions.SingleActivityFunctionalBlock;
+
 
 /**
  * @author DP118M
  *
  */
-public interface TranslationTester extends SingleActivityModule {
+public interface TranslationTester extends SingleActivityFunctionalBlock {
     void setTranslationDirectories(final List<File> aDirectories);
     List<ProblemTuple> getTranslationProblems();
 }
