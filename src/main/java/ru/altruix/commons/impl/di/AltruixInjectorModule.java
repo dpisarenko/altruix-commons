@@ -19,7 +19,7 @@ import com.google.inject.AbstractModule;
 public abstract class AltruixInjectorModule extends AbstractModule {
     @SuppressWarnings({ "rawtypes", "unchecked" })
     @Override
-    protected void configure() {
+    protected final void configure() {
         final Map<Class, Object> interfacesByInstances =
                 new HashMap<Class, Object>();
 
