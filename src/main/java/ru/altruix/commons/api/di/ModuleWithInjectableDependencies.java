@@ -13,6 +13,11 @@ package ru.altruix.commons.api.di;
 import com.google.inject.Inject;
 import com.google.inject.Injector;
 
+/**
+ * @deprecated
+ * Please use ru.altruix.commons.api.di.FunctionalBlockWithInjectableDependencies instead.
+ */
+@Deprecated
 public interface ModuleWithInjectableDependencies {
     @Inject
     void setInjector(final Injector aInjector);
