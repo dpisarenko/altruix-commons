@@ -41,5 +41,29 @@ public class DatabaseUtils {
         }
         return resultSet;
     }
-
+    public static int executeQueryWithSingleIntResult(final String aQuery,
+            final Statement aStatement, final Logger aLogger) {
+        ResultSet resultSet = null;
+        try {
+            resultSet =
+                    DatabaseUtils.executeQuery(aQuery, aLogger, aStatement);
+            resultSet.next();
+            return resultSet.getInt(1);
+        } catch (final SQLException exception) {
+            aLogger.error("", exception);
+            throw new RuntimeException(exception);
+        } finally {
+            closeResultSet(resultSet, aLogger);
+        }
+    }
+    public static void closeResultSet(final ResultSet aResultSet, final Logger aLogger) {
+        if (aResultSet != null) {
+            try {
+                aResultSet.close();
+            } catch (final SQLException exception) {
+                aLogger.error("", exception);
+            }
+        }
+    }
+    
 }
