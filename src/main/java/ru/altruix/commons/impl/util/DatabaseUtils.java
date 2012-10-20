@@ -7,6 +7,7 @@
 
 package ru.altruix.commons.impl.util;
 
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -26,6 +27,19 @@ public class DatabaseUtils {
                 aLogger.error("", exception);
             }
         }
+    }
+
+    public static ResultSet executeQuery(final String aQuery,
+            final Logger aLogger, final Statement aStatement) {
+        ResultSet resultSet = null;
+        try {
+            resultSet = aStatement
+                    .executeQuery(aQuery);
+        } catch (final SQLException exception) {
+            aLogger.error("", exception);
+            throw new RuntimeException(exception);
+        }
+        return resultSet;
     }
 
 }
