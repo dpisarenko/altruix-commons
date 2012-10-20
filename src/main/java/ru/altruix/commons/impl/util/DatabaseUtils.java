@@ -65,5 +65,23 @@ public class DatabaseUtils {
             }
         }
     }
+    public static long executeQueryWithSingleLongResult(final String aQuery,
+            final Statement aStatement, final Logger aLogger) {
+        ResultSet resultSet = null;
+        try {
+            resultSet = DatabaseUtils.
+                    executeQuery(aQuery, aLogger, aStatement);
+            if (resultSet.next()) {
+                return resultSet.getLong(1);
+            } else {
+                return -1;
+            }
+        } catch (final SQLException exception) {
+            aLogger.error("", exception);
+            throw new RuntimeException(exception);
+        } finally {
+            DatabaseUtils.closeResultSet(resultSet, aLogger);
+        }
+    }
     
 }
