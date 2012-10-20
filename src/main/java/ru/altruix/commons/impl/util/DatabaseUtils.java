@@ -83,5 +83,9 @@ public class DatabaseUtils {
             DatabaseUtils.closeResultSet(resultSet, aLogger);
         }
     }
+    public static String substituteUserId(final long aUserId, final String aTemplate) {
+        return aTemplate
+                .replace("@{userId}", Long.toString(aUserId));
+    }
     
 }
