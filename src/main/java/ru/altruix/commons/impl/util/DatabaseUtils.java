@@ -31,14 +31,18 @@ public class DatabaseUtils {
 
     public static ResultSet executeQuery(final String aQuery,
             final Logger aLogger, final Statement aStatement) {
+        aLogger.debug("executeQuery, 1");
         ResultSet resultSet = null;
         try {
             resultSet = aStatement
                     .executeQuery(aQuery);
+            aLogger.debug("executeQuery, 2");
         } catch (final SQLException exception) {
+            aLogger.debug("executeQuery, 3");
             aLogger.error("", exception);
             throw new RuntimeException(exception);
         }
+        aLogger.debug("executeQuery, 4");
         return resultSet;
     }
     public static int executeQueryWithSingleIntResult(final String aQuery,
@@ -68,6 +72,7 @@ public class DatabaseUtils {
     public static long executeQueryWithSingleLongResult(final String aQuery,
             final Statement aStatement, final Logger aLogger) {
         ResultSet resultSet = null;
+
         try {
             resultSet = DatabaseUtils.
                     executeQuery(aQuery, aLogger, aStatement);
