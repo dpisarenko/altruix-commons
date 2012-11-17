@@ -38,7 +38,7 @@ public class DatabaseUtils {
                     .executeQuery(aQuery);
             aLogger.debug("executeQuery, 2");
         } catch (final SQLException exception) {
-            aLogger.debug("executeQuery, 3");
+            aLogger.debug("SQL: {}", aQuery);
             aLogger.error("", exception);
             throw new RuntimeException(exception);
         }
