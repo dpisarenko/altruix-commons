@@ -15,4 +15,6 @@ import ru.altruix.commons.api.conventions.SingleActivityFunctionalBlock;
 
 public interface PccVersionReader extends SingleActivityFunctionalBlock {
     String getVersion();
+
+    void setPropertyFilePath(final String aPropertyFilePath);
 }

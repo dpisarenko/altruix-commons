@@ -31,6 +31,7 @@ class DefaultPccVersionReader implements PccVersionReader {
     private static final Logger LOGGER = LoggerFactory
             .getLogger(DefaultPccVersionReader.class);
     private String version = "?";
+    private String propertyFilePath = PROPERTY_FILE_PATH;
 
     @Override
     public String getVersion() {
@@ -42,7 +43,7 @@ class DefaultPccVersionReader implements PccVersionReader {
         final Properties properties = new Properties();
 
         final InputStream inputStream = getClass().getClassLoader()
-                .getResourceAsStream(PROPERTY_FILE_PATH);
+                .getResourceAsStream(propertyFilePath);
         try {
             properties.load(inputStream);
             final String versionFromFile = properties
@@ -59,6 +60,11 @@ class DefaultPccVersionReader implements PccVersionReader {
         } finally {
             IOUtils.closeQuietly(inputStream);
         }
+    }
+
+    @Override
+    public void setPropertyFilePath(final String aPropertyFilePath) {
+        this.propertyFilePath = aPropertyFilePath;
     }
 
 }
