@@ -88,6 +88,26 @@ public class DatabaseUtils {
             DatabaseUtils.closeResultSet(resultSet, aLogger);
         }
     }
+    public static double executeQueryWithSingleDoubleResult(final String aQuery,
+            final Statement aStatement, final Logger aLogger) {
+        ResultSet resultSet = null;
+
+        try {
+            resultSet = DatabaseUtils.
+                    executeQuery(aQuery, aLogger, aStatement);
+            if (resultSet.next()) {
+                return resultSet.getDouble(1);
+            } else {
+                return Double.NaN;
+            }
+        } catch (final SQLException exception) {
+            aLogger.error("", exception);
+            throw new RuntimeException(exception);
+        } finally {
+            DatabaseUtils.closeResultSet(resultSet, aLogger);
+        }
+    }
+
     public static String substituteUserId(final long aUserId, final String aTemplate) {
         return aTemplate
                 .replace("@{userId}", Long.toString(aUserId));
