@@ -10,13 +10,9 @@
  **/
 package ru.altruix.commons.impl.util;
 
-import static org.apache.commons.lang.StringUtils.isBlank;
-
 import java.util.Date;
 
 import org.apache.commons.lang.time.DateUtils;
-
-import com.vaadin.ui.TextField;
 
 public final class Utils {
     private static final int MINUTES_IN_HOUR = 60;
@@ -26,11 +22,6 @@ public final class Utils {
      * public or default constructor.
      */
     private Utils() {
-    }
-
-    public static boolean textFieldEmpty(final TextField aTextField) {
-        final String text = (String) aTextField.getValue();
-        return isBlank(text);
     }
 
     public static Date addHours(final Date aDateTime, final double aHours) {
