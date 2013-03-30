@@ -19,13 +19,6 @@
 		<developerConnection>scm:git:[fetch=]git@dp118m.beanstalkapp.com:/altruix-commons.git[push=]altruix-commons</developerConnection>
 	</scm>
   
-  <distributionManagement>
-	<repository>
-	  <id>altruix-repository</id>
-	  <url>ftp://silverstrike.at/altruix-repository/</url>
-	</repository>
-  </distributionManagement>
-
   <build>
 	<plugins>
 		<plugin>
@@ -77,11 +70,6 @@
 			<groupId>com.google.inject</groupId>
 			<artifactId>guice</artifactId>
 			<version>2.0</version>
-		</dependency>
-		<dependency>
-			<groupId>com.vaadin</groupId>
-			<artifactId>vaadin</artifactId>
-			<version>6.4.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
