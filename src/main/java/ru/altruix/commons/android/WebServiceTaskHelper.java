@@ -21,8 +21,6 @@ import org.apache.http.params.BasicHttpParams;
 import org.apache.http.params.HttpConnectionParams;
 import org.apache.http.params.HttpParams;
 
-import co.altruix.ccp.android.api.IWebServiceTaskHelper;
-
 import android.util.Log;
 
 /**
