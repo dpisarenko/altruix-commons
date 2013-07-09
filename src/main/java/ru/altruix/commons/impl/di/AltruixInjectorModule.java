@@ -30,7 +30,6 @@ public abstract class AltruixInjectorModule extends AbstractModule {
 
             bind(clazz).toInstance(instance);
         }
-
     }
 
     @SuppressWarnings("rawtypes")
