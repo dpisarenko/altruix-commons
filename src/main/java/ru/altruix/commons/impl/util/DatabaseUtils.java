@@ -7,10 +7,14 @@
 
 package ru.altruix.commons.impl.util;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.StringTokenizer;
 
+import org.apache.commons.io.IOUtils;
 import org.slf4j.Logger;
 
 /**
@@ -113,4 +117,37 @@ public class DatabaseUtils {
                 .replace("@{userId}", Long.toString(aUserId));
     }
     
+    public static void executeSqlScript(final String aPath, final Logger aLogger,
+            final Statement aStatement) {
+        try {
+            final InputStream inputStream =
+                    Thread.currentThread()
+                            .getContextClassLoader()
+                            .getResourceAsStream(
+                                    aPath);
+
+            aLogger.debug("inputStream: {}", inputStream);
+
+            final String script = IOUtils.toString(inputStream);
+
+            final StringTokenizer tokenizer = new StringTokenizer(script, ";");
+
+            while (tokenizer.hasMoreTokens()) {
+                final String command = tokenizer.nextToken();
+
+                aLogger.debug("command: {}", command);
+                try {
+                    aStatement.execute(command);
+                } catch (final SQLException exception) {
+                    if (!command.contains("DROP TABLE")) {
+                        aLogger.debug("", exception);
+                        throw new RuntimeException(exception);
+                    }
+                }
+            }
+        } catch (final IOException exception) {
+            aLogger.error("", exception);
+        }
+    }
+
 }
