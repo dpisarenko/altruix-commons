@@ -9,6 +9,7 @@ package ru.altruix.commons.impl.util;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -149,5 +150,15 @@ public class DatabaseUtils {
             aLogger.error("", exception);
         }
     }
+	public static void closeConnectionQuietly(final Connection aConnection, 
+			final Logger aLogger) {
+		if (aConnection != null) {
+			try {
+				aConnection.close();
+			} catch (final SQLException exception) {
+				aLogger.error("", exception);
+			}
+		}
+	}
 
 }
