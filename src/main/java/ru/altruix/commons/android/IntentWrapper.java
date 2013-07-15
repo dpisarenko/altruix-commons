@@ -21,7 +21,12 @@ public class IntentWrapper implements IIntent {
 	{
 		return intent.putExtra(aName, aValue);
 	}
-
+	
+	@Override
+	public Intent putExtra(final String aName, final String aValue) {
+		return intent.putExtra(aName, aValue);
+	}
+	
 	@Override
 	public void startActivity(final IActivity aActivity) {
 		aActivity.startActivity(intent);

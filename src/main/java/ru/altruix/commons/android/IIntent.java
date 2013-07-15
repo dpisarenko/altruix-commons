@@ -11,5 +11,6 @@ import android.content.Intent;
  */
 public interface IIntent {
 	Intent putExtra(final String aName, final long aValue);
+	Intent putExtra(final String aName, final String aValue);
 	void startActivity(final IActivity aActivity);
 }
