@@ -11,4 +11,5 @@ import android.content.Intent;
  */
 public interface IActivity {
 	void startActivity(final Intent aIntent);
+	public String getResourceString(final int aStringId);
 }
