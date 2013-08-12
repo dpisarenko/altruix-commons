@@ -31,4 +31,12 @@ public class IntentWrapper implements IIntent {
 	public void startActivity(final IActivity aActivity) {
 		aActivity.startActivity(intent);
 	}
+
+	public Intent getIntent() {
+		return intent;
+	}
+
+	public void setIntent(final Intent aIntent) {
+		this.intent = aIntent;
+	}
 }
