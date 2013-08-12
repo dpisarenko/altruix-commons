@@ -17,4 +17,9 @@ public class IntentFactory implements IIntentFactory {
 			final Class<? extends Activity> aClass) {
 		return new IntentWrapper(new Intent(aParent, aClass));
 	}
+
+	@Override
+	public IIntent createEmptyIntent() {
+		return new IntentWrapper(new Intent());
+	}
 }
