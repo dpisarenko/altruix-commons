@@ -39,4 +39,14 @@ public class IntentWrapper implements IIntent {
 	public void setIntent(final Intent aIntent) {
 		this.intent = aIntent;
 	}
+
+	@Override
+	public String getStringExtra(final String aName) {
+		return intent.getStringExtra(aName);
+	}
+
+	@Override
+	public long getLongExtra(final String aName, final long aDefaultValue) {
+		return intent.getLongExtra(aName, aDefaultValue);
+	}
 }
