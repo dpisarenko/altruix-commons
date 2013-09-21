@@ -3,8 +3,6 @@
  */
 package ru.altruix.commons.android;
 
-import ru.altruix.cb.android.common.IConnectivityManager;
-import ru.altruix.cb.android.startup.IInternetAvailabilityChecker;
 import android.net.NetworkInfo;
 
 /**
