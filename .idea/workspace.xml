@@ -2,21 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="853d36b8-22eb-4682-95bf-22ad035cd285" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/AbstractAsyncTask.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/ConstantServerUrlStorage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/ILogger.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/IRequestSender.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/IResponseParser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/IServerUrlStorage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/LoggerWrapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/ResponseParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/commons.iml" afterPath="$PROJECT_DIR$/commons.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/ISimCardReader.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_1_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_1_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_1_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/SimCardInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/SimCardReader.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/SimState.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="commons.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="853d36b8-22eb-4682-95bf-22ad035cd285" time="1381347957238" ignored="false" />
+    <file path="/Dummy.txt" changelist="853d36b8-22eb-4682-95bf-22ad035cd285" time="1381348834796" ignored="false" />
+    <file path="/ISimCardReader.java" changelist="853d36b8-22eb-4682-95bf-22ad035cd285" time="1381349458056" ignored="false" />
+    <file path="/ActivityServerUrlStorage.java" changelist="853d36b8-22eb-4682-95bf-22ad035cd285" time="1381349531304" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,19 +76,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="ResponseProcessor.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/ResponseProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="118" column="21" selection-start="3616" selection-end="3616" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResponseParser.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/ResponseParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="9" column="13" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,19 +87,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/IActivity.java">
+      <file leaf-file-name="IResponseParser.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/IResponseParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="31" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0">
+            <state line="26" column="17" selection-start="891" selection-end="891" vertical-scroll-proportion="0.5884615">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Utils.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/Utils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="0" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActivityServerUrlStorage.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/ActivityServerUrlStorage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractAsyncTask.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AbstractAsyncTask.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/AbstractAsyncTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="66" column="27" selection-start="2480" selection-end="2480" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#2981#0" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -118,33 +130,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IResponseParser.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/IResponseParser.java">
+      <file leaf-file-name="LoggerWrapper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/LoggerWrapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="69" selection-start="1056" selection-end="1056" vertical-scroll-proportion="0.0">
+            <state line="23" column="13" selection-start="769" selection-end="769" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#0#1115#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IServerUrlStorage.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/IServerUrlStorage.java">
+      <file leaf-file-name="RequestToJsonConverter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/RequestToJsonConverter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="730" selection-end="730" vertical-scroll-proportion="0.0">
+            <state line="3" column="35" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoggerWrapper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/LoggerWrapper.java">
+      <file leaf-file-name="SimCardReader.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/SimCardReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="116" column="14" selection-start="4538" selection-end="4538" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#0#1115#0" expanded="true" />
+                <element signature="e#0#5387#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#2242#2255#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SimState.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/SimState.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="12" selection-start="742" selection-end="742" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -167,16 +190,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/ConnectivityManagerWrapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/ConstantServerUrlStorage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/ILogger.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/IServerUrlStorage.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/IRequestSender.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/LoggerWrapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/ResponseParser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/IResponseParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/AbstractAsyncTask.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/ICbResponseParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/IRequestToJsonConverter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/ITelephonyManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/TelephonyManagerWrapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/CbResponseParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/ISimCardReader/java.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/SimCardInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/SimState/java.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/SimState.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/ISimCardReader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/RequestToJsonConverter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/SimCardReader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/Utils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/ActivityServerUrlStorage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/ResponseProcessor.java" />
       </list>
     </option>
   </component>
@@ -186,6 +215,24 @@
         <PATH_ELEMENT>
           <option name="myItemId" value="" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="commons" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="commons" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
         </PATH_ELEMENT>
       </PATH>
     </treeState>
@@ -335,6 +382,7 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
+    <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
@@ -343,6 +391,28 @@
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
       <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -461,7 +531,11 @@
       <created>1381347980385</created>
       <updated>1381347980385</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fixed compiler errors.">
+      <created>1381348845758</created>
+      <updated>1381348845758</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -476,13 +550,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32879046" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.6712095" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32954547" sideWeight="0.5809199" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.6712095" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5809199" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41908008" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -532,7 +606,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Apache License headers." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed compiler errors." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -547,74 +621,114 @@
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="Added Apache License headers." />
+    <MESSAGE value="Fixed compiler errors." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/ConnectivityManagerWrapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/IRequestToJsonConverter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="52" selection-start="967" selection-end="967" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#1220#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/IActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="31" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0">
+        <state line="3" column="31" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/IServerUrlStorage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/ITelephonyManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="730" selection-end="730" vertical-scroll-proportion="0.0">
+        <state line="3" column="9" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/IRequestSender.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/TelephonyManagerWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="17" selection-start="692" selection-end="692" vertical-scroll-proportion="0.048991356">
+        <state line="3" column="16" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/ILogger.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/SimCardInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="76" selection-start="837" selection-end="837" vertical-scroll-proportion="0.5389049">
+        <state line="68" column="0" selection-start="1804" selection-end="1804" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/ConstantServerUrlStorage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/ISimCardReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="53" selection-start="783" selection-end="783" vertical-scroll-proportion="0.19596542">
+        <state line="23" column="0" selection-start="754" selection-end="754" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/LoggerWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="23" column="13" selection-start="769" selection-end="769" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#1115#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/RequestToJsonConverter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="21" selection-start="3616" selection-end="3616" vertical-scroll-proportion="0.0">
+        <state line="3" column="35" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/ResponseParser.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/SimState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="21" column="12" selection-start="742" selection-end="742" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/SimCardReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="116" column="14" selection-start="4538" selection-end="4538" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#5387#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2242#2255#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/ActivityServerUrlStorage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/AbstractAsyncTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="27" selection-start="2480" selection-end="2480" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#2981#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/ResponseProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -623,18 +737,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/IResponseParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="69" selection-start="1056" selection-end="1056" vertical-scroll-proportion="0.0">
+        <state line="26" column="17" selection-start="891" selection-end="891" vertical-scroll-proportion="0.5884615">
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/altruix/commons/android/AbstractAsyncTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#2981#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
