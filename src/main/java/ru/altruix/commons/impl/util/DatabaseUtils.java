@@ -28,6 +28,7 @@ import java.sql.Statement;
 import java.util.StringTokenizer;
 
 import org.apache.commons.io.IOUtils;
+import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 
 /**
@@ -172,5 +173,22 @@ public class DatabaseUtils {
 			}
 		}
 	}
+    public static String replacePlaceholders(final String aTemplate, final Object... aReplacements)
+    {
+        final String[] searchList = new String[aReplacements.length];
 
+        for (int i=0; i < searchList.length; i++)
+        {
+            searchList[i] = "{" + Integer.toString(i) + "}";
+        }
+
+        final String[] replacements = new String[aReplacements.length];
+
+        for (int i=0; i < replacements.length; i++)
+        {
+            replacements[i] = (String) aReplacements[i];
+        }
+
+        return StringUtils.replaceEach(aTemplate, searchList, replacements);
+    }
 }
